@@ -2,13 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { LocationComponent } from './location.component';
-
 const routes = [
-  {
-    path: '',
-    component: LocationComponent
-  },
   {
     path: 'cameras',
     loadChildren: './cameras/cameras.module#CamerasModule'
@@ -17,10 +11,15 @@ const routes = [
     path: 'camera/:id',
     loadChildren: './camera/camera.module#CameraModule'
   },
+  {
+    path: '',
+    redirectTo: 'cameras',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
-  declarations: [LocationComponent],
+  declarations: [],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
