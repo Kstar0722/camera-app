@@ -1,0 +1,41 @@
+# Node.js with Angular
+# Build a Node.js project that uses Angular.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  name: Hosted VS2017
+  demands: npm
+
+steps:
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    verbose: true
+
+- task: Npm@1
+  displayName: 'build'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run build'
+
+- task: CopyFiles@2
+  displayName: 'copy web.config to dist'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/'
+    Contents: web.config
+    TargetFolder: '$(Build.SourcesDirectory)/dist/SensAI'
+
+- task: ArchiveFiles@2
+  displayName: 'zip dist'
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)/dist/SensAI/*'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifact'
+  inputs:
+    ArtifactName: '$(Build.BuildId)'
