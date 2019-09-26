@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/All/full-screen</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Locations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Locations-Livestrean" transform="translate(-1271.000000, -729.000000)" stroke="#FFFFFF">
+            <g id="Group-3" transform="translate(299.000000, 268.000000)">
+                <g id="bar" transform="translate(0.000000, 435.000000)">
+                    <g id="Icon/All/full-screen" transform="translate(972.000000, 26.000000)">
+                        <path d="M11.8333333,0.833333333 L19.1666667,0.833333333 L19.1666667,8.16666667 M0.833333333,11.8333333 L0.833333333,19.1666667 L8.16666667,19.1666667 M19.1666667,0.833333333 L13.0555556,6.94444444 M6.94444444,13.0555556 L0.833333333,19.1666667 M8.16666667,0.833333333 L0.833333333,0.833333333 L0.833333333,8.16666667 M0.833333333,0.833333333 L6.94444444,6.94444444 M19.1666667,11.8333333 L19.1666667,19.1666667 L11.8333333,19.1666667 M13.0555556,13.0555556 L19.1666667,19.1666667" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

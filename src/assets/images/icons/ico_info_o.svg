@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/All/profile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="nag/item" transform="translate(-20.000000, -12.000000)" stroke="#FE000C">
+            <g id="Icon/All/info" transform="translate(20.000000, 12.000000)">
+                <path d="M8,5.55555556 C8.27000588,5.55555556 8.48888889,5.33667254 8.48888889,5.06666667 C8.48888889,4.79666079 8.27000588,4.57777778 8,4.57777778 C7.72999412,4.57777778 7.51111111,4.79666079 7.51111111,5.06666667 C7.51111111,5.33667254 7.72999412,5.55555556 8,5.55555556 Z M8,14.8444444 C11.7800823,14.8444444 14.8444444,11.7800823 14.8444444,8 C14.8444444,4.21991771 11.7800823,1.15555556 8,1.15555556 C4.21991771,1.15555556 1.15555556,4.21991771 1.15555556,8 C1.15555556,11.7800823 4.21991771,14.8444444 8,14.8444444 Z M8,11.9111111 L8,8" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

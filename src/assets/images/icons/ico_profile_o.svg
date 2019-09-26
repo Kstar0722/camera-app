@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/All/profile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Dashboard2_expanded" transform="translate(-1245.000000, -82.000000)" stroke="#FE000C">
+            <g id="Profile" transform="translate(1225.000000, 62.000000)">
+                <g transform="translate(20.000000, 20.000000)" id="Icon/All/profile">
+                    <g>
+                        <path d="M8,8.45833333 C9.26565255,8.45833333 10.2916667,7.43231922 10.2916667,6.16666667 C10.2916667,4.90101412 9.26565255,3.875 8,3.875 C6.73434745,3.875 5.70833333,4.90101412 5.70833333,6.16666667 C5.70833333,7.43231922 6.73434745,8.45833333 8,8.45833333 Z M12.54025,13.1525833 C11.7036801,11.4045649 9.93789003,10.292048 8,10.292048 C6.06210997,10.292048 4.29631994,11.4045649 3.45975,13.1525833 M8,14.875 C11.7969577,14.875 14.875,11.7969577 14.875,8 C14.875,4.20304235 11.7969577,1.125 8,1.125 C4.20304235,1.125 1.125,4.20304235 1.125,8 C1.125,11.7969577 4.20304235,14.875 8,14.875 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -25,7 +25,20 @@ const routes: Routes = [
   {
     path: 'location/:id',
     loadChildren: './pages/location/location.module#LocationModule'
-  }
+  },
+  {
+    path: 'notification',
+    loadChildren: './pages/notification/notification.module#NotificationModule'
+  },
+  {
+    path: 'my-info',
+    loadChildren: './pages/information/information.module#InformationModule'
+  },
+  {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({

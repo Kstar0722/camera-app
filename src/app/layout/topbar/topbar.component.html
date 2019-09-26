@@ -1,3 +1,63 @@
-<p>
-  topbar works!
-</p>
+<header id="header">
+  <div class="section-mobile">
+    <button type="button" [className]="openMobileSideBar ? 'navbar-toggle open' : 'navbar-toggle'" (click)="onToggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <p id="Logo-sp"><a href=""><img src="../../../assets/images/common/logo.svg" alt=""></a></p>
+  </div>
+
+  <form action="" method="POST" class="form-inline" role="form">
+    <p class="search-mobile" (click)="toggleMobileSearchBar()"><img src="../../../assets/images/icons/ico_search.svg" alt=""></p>
+    <div [className]="openMobileSearch ? 'form-search open' : 'form-search'">
+      <input type="text" class="form-control" id="" placeholder="Search">
+      <p class="icon-search" ><img src="../../../assets/images/icons/ico_search.svg" alt=""></p>
+      <span class="close-search" (click)="toggleMobileSearchBar()"></span>
+    </div>
+  </form>
+  <div class="user" (click)="toggleDropDown()" (blur)="toggleDropDown()">
+    <div class="dropdown">
+      <div class="dropdown-toggle" id="dropdown-user" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        <span class="avatar"><img src="../../../assets/images/avatar.png" alt=""></span>
+        <div class="user-info">
+          <p class="name">John Smith <span>Data Scientist</span></p>
+        </div>
+        <span class="caret"></span>
+      </div>
+      <ul [className]="openDropDown ? 'dropdown-menu open' : 'dropdown-menu'" aria-labelledby="dropdown-user">
+        <li>
+          <a href="#">
+            <span class="icon">
+              <img src="../../../assets/images/icons/ico_profile.svg" alt="">
+              <img class="icon-over" src="../../../assets/images/icons/ico_profile_o.svg" alt="">
+            </span>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <img src="../../../assets/images/icons/ico_setting.svg" alt="">
+              <img class="icon-over" src="../../../assets/images/icons/ico_setting_o.svg" alt="">
+            </span>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <img src="../../../assets/images/icons/ico_logout.svg" alt="">
+              <img class="icon-over" src="../../../assets/images/icons/ico_logout_o.svg" alt="">
+            </span>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/All/view</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Card/Camera" transform="translate(-25.000000, -240.000000)" stroke="#5A5A5A">
+            <g id="Camera/card">
+                <g id="view" transform="translate(0.000000, 226.000000)">
+                    <g id="Icon/All/view" transform="translate(25.000000, 12.000000)">
+                        <path d="M1.33333333,8.16666667 C1.33333333,8.16666667 3.77777778,2.66666667 8.05555556,2.66666667 C12.3333333,2.66666667 14.7777778,8.16666667 14.7777778,8.16666667 C14.7777778,8.16666667 12.3333333,13.6666667 8.05555556,13.6666667 C3.77777778,13.6666667 1.33333333,8.16666667 1.33333333,8.16666667 Z M8.05555556,10.6111111 C9.40558494,10.6111111 10.5,9.51669606 10.5,8.16666667 C10.5,6.81663728 9.40558494,5.72222222 8.05555556,5.72222222 C6.70552617,5.72222222 5.61111111,6.81663728 5.61111111,8.16666667 C5.61111111,9.51669606 6.70552617,10.6111111 8.05555556,10.6111111 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

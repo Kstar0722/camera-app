@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>ic_pause_circle_outline_48px copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Locations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Locations-Livestrean" transform="translate(-319.000000, -722.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="bar" transform="translate(299.000000, 703.000000)">
+                <g id="ic_pause_circle_outline_48px-copy" transform="translate(20.000000, 19.000000)">
+                    <path d="M16,0 C7.16,0 0,7.16 0,16 C0,24.84 7.16,32 16,32 C24.84,32 32,24.84 32,16 C32,7.16 24.84,0 16,0 Z M16,28.8 C8.944,28.8 3.2,23.056 3.2,16 C3.2,8.944 8.944,3.2 16,3.2 C23.056,3.2 28.8,8.944 28.8,16 C28.8,23.056 23.056,28.8 16,28.8 Z" id="Shape"></path>
+                    <path d="M21.75,16.4992408 C21.75,16.2343658 21.6208125,15.9857408 21.4030625,15.8338033 L13.2780625,10.1463033 C13.0310625,9.97242826 12.7060625,9.95292826 12.437125,10.0910533 C12.1681875,10.2316158 12,10.5086783 12,10.8117408 L12,22.1875533 C12,22.4906158 12.1681875,22.7684908 12.437125,22.9082408 C12.7060625,23.0463658 13.03025,23.0268658 13.2780625,22.8529908 L21.4030625,17.1654908 C21.6208125,17.0143658 21.75,16.7657408 21.75,16.5008658 C21.75,16.5000533 21.75,16.5000533 21.75,16.4992408 C21.75,16.5000533 21.75,16.5000533 21.75,16.4992408 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
