@@ -6,8 +6,16 @@ import { LocationComponent } from './location.component';
 
 const routes = [
   {
-    path: ':id',
+    path: '',
     component: LocationComponent
+  },
+  {
+    path: 'cameras',
+    loadChildren: './cameras/cameras.module#CamerasModule'
+  },
+  {
+    path: 'camera/:id',
+    loadChildren: './camera/camera.module#CameraModule'
   },
 ];
 

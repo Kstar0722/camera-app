@@ -23,7 +23,7 @@ const routes: Routes = [
     loadChildren: './pages/locations/locations.module#LocationsModule'
   },
   {
-    path: 'location',
+    path: 'location/:id',
     loadChildren: './pages/location/location.module#LocationModule'
   }
 ];
