@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/All/heart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Card/Camera" transform="translate(-224.000000, -165.000000)" fill="#0C479D">
+            <g id="Camera/card">
+                <g id="Icon/All/heart" transform="translate(223.000000, 164.000000)">
+                    <path d="M17.0308985,3.09965057 C15.2954297,1.19063491 12.4811259,1.19063491 10.7456572,3.09965057 C10.4345616,3.44185568 10.2001289,3.83050292 10.0001389,4.23503825 C9.80014888,3.83050292 9.56571616,3.44063352 9.25350955,3.09842841 C7.51804076,1.18941275 4.70373704,1.18941275 2.96826825,3.09842841 C1.23279947,5.00744407 1.23279947,8.10317817 2.96826825,10.0121938 L10.0001389,17.5553722 L17.0308985,10.0121938 C18.7674783,8.10317817 18.7674783,5.00866623 17.0308985,3.09965057 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,44 @@
+<div id="sidebar" [className] = "isOpenMobileSidebar ? 'side-open' : ''">
+  <h1 id="logo"><a href=""><img src="../../../assets/images/common/logo.svg" alt=""></a></h1>
+  <div class="side-nav" (click)="toggleSidebar()">
+    <ul class="nav-list">
+      <li [className] = "(!routeUrl || routeUrl === 'dashboard') ? 'active' : ''">
+        <a [routerLink]="['/dashboard']">
+          <span class="icon">
+            <img src="../../../assets/images/icons/ico_dashboard.svg" alt="">
+            <img class="icon-over" src="../../../assets/images/icons/ico_dashboard_o.svg" alt="">
+          </span>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li [className] = "(routeUrl === 'locations' || routeUrl === 'location') ? 'active' : ''">
+        <a [routerLink]="['/locations']">
+          <span class="icon">
+            <img src="../../../assets/images/icons/ico_location.svg" alt="">
+            <img class="icon-over" src="../../../assets/images/icons/ico_location_o.svg" alt="">
+          </span>
+          <span>Locations</span>
+        </a>
+      </li>
+      <li [className] = "routeUrl === 'notification' ? 'active' : ''">
+          <a [routerLink]="['/notification']">
+          <span class="icon">
+            <img src="../../../assets/images/icons/ico_notification.svg" alt="">
+            <img class="icon-over" src="../../../assets/images/icons/ico_notification_o.svg" alt="">
+          </span>
+          <span>Notification center</span>
+        </a>
+      </li>
+      <li [className] = "routeUrl === 'my-info' ? 'active' : ''">
+        <a [routerLink]="['/my-info']">
+          <span class="icon">
+            <img src="../../../assets/images/icons/ico_info.svg" alt="">
+            <img class="icon-over" src="../../../assets/images/icons/ico_info_o.svg" alt="">
+          </span>
+          <span>My information</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div [className] = "isOpenMobileSidebar ? 'mobile-sidebar-background open' : 'mobile-sidebar-background'"></div>

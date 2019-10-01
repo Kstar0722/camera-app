@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icon/All/profile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Dashboard2_expanded" transform="translate(-1245.000000, -154.000000)" stroke="#FE000C">
+            <g id="Profile" transform="translate(1225.000000, 62.000000)">
+                <g id="Profile-Copy-2" transform="translate(20.000000, 92.000000)">
+                    <g id="Icon/All/logout">
+                        <path d="M5.55555556,8.17777778 L15.3333333,8.17777778 M11.4222222,4.26666667 L15.3333333,8.17777778 L11.4222222,12.0888889 M8.48888889,15.0222222 L1.64444444,15.0222222 C1.10471111,15.0222222 0.666666667,14.5841778 0.666666667,14.0444444 L0.666666667,2.31111111 C0.666666667,1.77137778 1.10471111,1.33333333 1.64444444,1.33333333 L8.48888889,1.33333333" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

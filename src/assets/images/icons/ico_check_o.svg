@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="selected">
+            <g id="Group">
+                <rect id="Rectangle" fill="#0C479D" x="0" y="0" width="16" height="16" rx="2"></rect>
+                <path d="M12.1384107,4.2495218 L6.54463291,9.84329957 L4.50641069,7.80507735 C4.15762945,7.46821317 3.60322422,7.4730308 3.26034973,7.81590528 C2.91747524,8.15877977 2.91265761,8.71318501 3.2495218,9.06196624 L5.91618846,11.7286329 C6.26329944,12.0756391 6.82596637,12.0756391 7.17307735,11.7286329 L13.3952996,5.50641069 C13.7321638,5.15762945 13.7273461,4.60322422 13.3844716,4.26034973 C13.0415972,3.91747524 12.4871919,3.91265761 12.1384107,4.2495218 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
