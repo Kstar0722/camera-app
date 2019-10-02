@@ -1,0 +1,14 @@
+<div class="heading">
+  <h2>
+      <span>G-Line FBD</span>
+      <a><img src="../../../../../../assets/images/icons/ico_edit.svg" alt=""></a>
+  </h2>
+</div>
+<ul [className]="openMobileTab ? 'nav nav-tabs show-nav-tabs' : 'nav nav-tabs'" role="tablist">
+  <li [className]="active === 'live-stream' && 'active'"><a (click)="onClickTab('live-stream')">Livestream</a></li>
+  <li [className]="active === 'pictures' && 'active'"><a (click)="onClickTab('pictures')">Pictures</a></li>
+  <li [className]="active === 'analytics' && 'active'"><a (click)="onClickTab('analytics')">Analytics</a></li>
+  <li [className]="active === 'events' && 'active'"><a (click)="onClickTab('events')">Events</a></li>
+  <li [className]="active === 'computer-vision' && 'active'"><a (click)="onClickTab('computer-vision')">Computer vision</a></li>
+  <li [className]="active === 'api-settings' && 'active'"><a (click)="onClickTab('api-settings')">API Settings</a></li>
+</ul>
