@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { FlatpickrModule } from 'angularx-flatpickr';
+import { SharedModule } from '../../../shared/shared.module';
 
 import { ComponentsModule } from './components/components.module';
 import { CameraComponent } from './camera.component';
@@ -9,7 +13,6 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { EventsComponent } from './events/events.component';
 import { ComputerVisionComponent } from './computer-vision/computer-vision.component';
 import { ApiSettingsComponent } from './api-settings/api-settings.component';
-import { SharedModule } from '../../../shared/shared.module';
 
 const routes = [
   {
@@ -55,7 +58,10 @@ const routes = [
   ],
   imports: [
     RouterModule.forChild(routes),
+    CommonModule,
     ComponentsModule,
+    FormsModule,
+    FlatpickrModule.forRoot(),
     SharedModule
   ]
 })

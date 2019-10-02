@@ -1,3 +1,87 @@
 .container {
   margin-top: 20px;
+  .date-picker-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    .date-picker {
+      max-width: 350px;
+      input * {
+        color: #5a5a5a;
+        padding-left: 25px;
+        height: 40px;
+        padding-bottom: 5px;
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        width: 100%;
+      }
+    }
+  }
+  .section{
+    padding:20px 0 0 0;
+    .section-inner{
+      padding:20px 0 0 0;
+      .event-list {
+        .event-item {
+          background: #fff;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -o-border-radius: 4px;
+          padding: 15px 115px 15px 15px;
+          position: relative;
+          .event-info {
+            .img {
+              float: left;
+              width: 80px;
+              margin: 0;
+              img {
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -o-border-radius: 4px;
+              }
+            }
+            .event-des {
+              padding: 0 0 0 95px;
+              h4 {
+                font-size: 14px;
+                margin: 0 0 10px 0;
+                color: #000;
+                font-weight: 500;
+              }
+            }
+          }
+          .button {
+            margin:0;
+            position:absolute;
+            right:15px;
+            top:50%;
+            -webkit-transform:translate(0, -50%);
+            -ms-transform:translate(0, -50%);
+            transform:translate(0, -50%)
+          }
+          & + .event-item {
+            margin-top: 10px;
+          }
+        }
+      }
+      @media screen and (max-width:639px){
+        .event-list {
+          .event-item{
+            padding-right:15px;
+            .button{
+              margin:10px 0 0 0;
+              position:static;
+              -webkit-transform:translate(0);
+              -ms-transform:translate(0);
+              transform:translate(0);
+              text-align:right
+            }
+          }
+        }
+      } 
+    }
+  }
 }

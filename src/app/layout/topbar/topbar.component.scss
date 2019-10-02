@@ -27,7 +27,6 @@
 			width: 28px;
 			height: 19px;
 			cursor: pointer;
-			z-index: 10;
 			span {
 				display: block;
 				position: absolute;
@@ -97,8 +96,8 @@
 		input[type="text"] {
 			color: #5a5a5a;
 			padding-left: 25px;
-      height: 40px;
-      padding-bottom: 5px;
+			height: 40px;
+			padding-bottom: 5px;
 			border: none;
 			-webkit-box-shadow: none;
 			box-shadow: none;
@@ -250,16 +249,16 @@
 
 @media screen and (max-width:1023px){
   h2{
-      font-size:25px
+    font-size:25px
   }
   #header{
-      border-bottom:1px solid #eff4fa;
-      padding:5px 10px 5px 10px;
-      min-height:50px;
-      z-index:16
+		border-bottom:1px solid #eff4fa;
+		padding:5px 10px 5px 10px;
+		min-height:50px;
+		z-index:10001
   }
   #header .section-mobile #Logo-sp img{
-      max-width:100px
+		max-width:100px
   }
   #header .user{
     min-width: auto;
@@ -335,6 +334,6 @@
     cursor:pointer
   }
   #header .form-search.open{
-      display:block !important
+		display:block !important
   }
 }

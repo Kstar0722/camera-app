@@ -1,11 +1,43 @@
 <div class="video-player">
-  <vg-player>
+  <vg-player (onPlayerReady)="onPlayerReady($event)">
     <vg-controls [vgAutohide]="true" >
       <vg-play-pause vgFor="video"></vg-play-pause>
       <vg-time-display>{{ currentTime | date:'mm:ss':'+0000' }}</vg-time-display>
       <vg-scrub-bar>
         <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
       </vg-scrub-bar>
+      <div class="control-action">
+        <ul>
+          <li>
+            <a>
+              <span class="icon">
+                <img src="../../../assets/images/icons/ico_record.svg" alt="">
+                <img class="icon-over" src="../../../assets/images/icons/ico_record_o.svg" alt="">
+              </span>
+              <span>Record</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon">
+                <img src="../../../assets/images/icons/ico_download.svg" alt="">
+                <img class="icon-over" src="../../../assets/images/icons/ico_download_o.svg" alt="">
+              </span>
+              <span>Download picture</span>
+            </a>
+          </li>
+          <li>
+            <a (click)="fullscreen()">
+              <span class="icon">
+                <img src="../../../assets/images/icons/ico_fullscreen.svg" alt="">
+                <img class="icon-over" src="../../../assets/images/icons/ico_fullscreen_o.svg"
+                    alt="">
+              </span>
+              <span>Full Screen</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </vg-controls>
     <vg-overlay-play vgFor="video"></vg-overlay-play>
     <video [vgMedia]="media" #media id="video" preload="auto">

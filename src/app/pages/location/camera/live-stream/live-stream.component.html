@@ -1,4 +1,40 @@
 <app-camera-header></app-camera-header>
 <div class="container">
+  <div class="date-picker-wrapper">
+    <div class="date-picker">
+      <input 
+        class="date-time-picker"
+        placeholder="Select Date..."
+        mwlFlatpickr
+        [(ngModel)]="selectedDate" 
+        [altInput]="true" 
+        [enableTime]="true"
+        dateFormat="Y-m-d H:i"
+        [convertModelValue]="true"
+      >
+    </div>
+  </div>
   <app-video></app-video>
+  <div class="section">
+    <h2>Events</h2>
+    <div class="section-inner">
+      <div class="event-list">
+        <div class="event-item" *ngFor="let d of eventList">
+          <div class="event-info clearfix">
+            <p class="img"><img src="../../../../../assets/images/img_event.png" alt=""></p>
+            <div class="event-des">
+              <h4>Choosing The Best Photo Printer</h4>
+              <p class="time">2019-08-28 | 12:56:43 PM</p>
+            </div>
+          </div>
+          <p class="button">
+            <a
+              class="btn btn-primary"
+              (click)="onClickLive(d)"
+            >GO LIVE</a>
+          </p>
+        </div>
+      </div>
+    </div>
+</div>
 </div>
