@@ -9,6 +9,7 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { EventsComponent } from './events/events.component';
 import { ComputerVisionComponent } from './computer-vision/computer-vision.component';
 import { ApiSettingsComponent } from './api-settings/api-settings.component';
+import { SharedModule } from '../../../shared/shared.module';
 
 const routes = [
   {
@@ -55,6 +56,7 @@ const routes = [
   imports: [
     RouterModule.forChild(routes),
     ComponentsModule,
+    SharedModule
   ]
 })
 export class CameraModule { }

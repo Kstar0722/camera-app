@@ -1,0 +1,19 @@
+<div class="video-player">
+  <vg-player>
+    <vg-controls [vgAutohide]="true" >
+      <vg-play-pause vgFor="video"></vg-play-pause>
+      <vg-time-display>{{ currentTime | date:'mm:ss':'+0000' }}</vg-time-display>
+      <vg-scrub-bar>
+        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+      </vg-scrub-bar>
+    </vg-controls>
+    <vg-overlay-play vgFor="video"></vg-overlay-play>
+    <video [vgMedia]="media" #media id="video" preload="auto">
+      <source src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+    </video>
+  </vg-player>
+  <div class="top-tag">
+    <div class="left-tag">Classification: Agglomerated</div>
+    <div class="right-tag">LIVE</div>
+  </div>
+</div>

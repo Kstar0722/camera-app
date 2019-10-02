@@ -155,12 +155,13 @@
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
       transform: translateX(0);
-      z-index: 2;
+      z-index: 1000;
     }
   }
   .mobile-sidebar-background {
     &.open {
       display: block;
+      z-index: 999;
     }
   }
 }
