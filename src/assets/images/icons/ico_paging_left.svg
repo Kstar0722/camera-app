@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>4. Icons/Navigation/  Navigation icon [arrow left]</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.-UI-Elements/3.-Navigation/3.-Paginators/Range" transform="translate(-16.000000, -12.000000)" fill="#72809D" fill-rule="nonzero">
+            <g id="Pagination">
+                <g id="Numbers" transform="translate(16.000000, 7.000000)">
+                    <g id="3.-Icons/Navigation/Left" transform="translate(0.000000, 3.194444)">
+                        <path d="M3.5,8.30508727 L-0.231776614,4.32354583 C-0.636109385,3.89215139 -1.29241765,3.89215139 -1.69675042,4.32354583 L-1.69675042,4.32354583 C-2.10108319,4.75494027 -2.10108319,5.45517472 -1.69675042,5.88656916 L2.80950901,10.6944289 C3.19137885,11.101857 3.8095978,11.101857 4.19049099,10.6944289 L8.69675042,5.88656916 C9.10108319,5.45517472 9.10108319,4.75494027 8.69675042,4.32354583 L8.69675042,4.32354583 C8.29241765,3.89215139 7.63610938,3.89215139 7.23177661,4.32354583 L3.5,8.30508727 Z" id="Path" transform="translate(3.500000, 7.500000) rotate(-270.000000) translate(-3.500000, -7.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

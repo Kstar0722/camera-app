@@ -1,4 +1,171 @@
 <app-camera-header></app-camera-header>
-<p>
-  pictures works!
-</p>
+<div class="pictures-container">
+  <div class="block-search">
+    <form action="">
+        <div class="form-search">
+            <input type="text" class="form-control" id="" placeholder="Search">
+            <p class="icon-search"><img src="../../../../../assets/images/icons/ico_search.svg" alt=""></p>
+            <span (click)="toggleAdvanced()" class="advance-search">Advanced search</span>
+        </div><!-- form-search -->
+  
+        <div [className]="isOpenAdvance ? 'block-advance open' : 'block-advance'">
+            <div class="row">
+                <div class="col-sm-4">
+                    Start Date
+                </div>
+                <div class="col-sm-4">
+                    End Date Date
+                </div>
+                <div class="col-sm-4">
+                    Event
+                </div>
+            </div>
+        </div><!-- block-advance -->
+    </form>
+  </div><!-- block-search -->
+  
+  <div class="section">
+    <p class="text-right"><a class="btn btn-primary-light">Download Pictures</a></p>
+    <div class="section-inner">
+        <div class="row col-list">
+            <div class="col-xs-12 col-sm-4 col-lg-3 col-item" *ngFor="let picture of pictures">
+                <div class="col-inner">
+                    <div class="img">
+                        <p><img [src]="picture.image" alt=""></p>
+                    </div><!-- img -->
+                    <div class="info">
+                        <p class="ttl-info">{{ picture.name }}</p>
+                        <div class="description">
+                            <p>{{ picture.date }}</p>
+                        </div>
+                        <p class="select"><label for="s1"><input type="checkbox" id="s1" [checked]="picture.selected" > Select</label></p>
+                    </div><!-- info -->
+  
+                    <p class="button-bot" (click)="toggleModal()" ><a class="btn btn-primary-light" data-toggle="modal" data-target="#myModal">Full Screen</a></p>
+                </div><!-- col-inner -->
+            </div><!-- col-item -->
+        </div><!-- col-list -->
+  
+        <div class="paging text-right">
+            <ul class="pagination">
+                <li>
+                    <a aria-label="Previous">
+                        <span aria-hidden="true"><img src="../../../../../assets/images/icons/ico_paging_left.svg" alt=""></span>
+                    </a>
+                </li>
+                <li><a>1</a></li>
+                <li class="active"><a>2</a></li>
+                <li><a>3</a></li>
+                <li><span>...</span></li>
+                <li><a>45</a></li>
+                <li>
+                    <a aria-label="Next">
+                        <span aria-hidden="true"><img src="../../../../../assets/images/icons/ico_paging_right.svg" alt=""></span>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- paging -->
+  
+        <!-- Modal Full screen -->
+        <div class="modal fade modal-full-screen" [class.in]="isOpenModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" (click)="toggleModal()" class="close" ><span><img src="../../../../../assets/images/icons/ico_close.svg" alt=""></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="slide-pictures">
+                            <div class="slide-item">
+                                <p><img src="../../../../../assets/images/img_full01.jpg" alt=""></p>
+                            </div><!-- item -->
+  
+                            <div class="slide-item">
+                                <p><img src="../../../../../assets/images/img_full02.jpg" alt=""></p>
+                            </div><!-- item -->
+                        </div><!-- slide-pictures -->
+  
+                        <div class="picture-mark">
+                            <div class="head">
+                                <h3>Remarks <span>2019-08-27 | 12:16:43 PM</span></h3>
+                                <div class="head-info">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum</p>
+                                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                                </div><!-- head-info -->
+  
+                                <div class="block-comment clearfix">
+                                    <p class="avatar"><img src="../../../../../assets/images/avatar.png" alt=""></p>
+                                    <div class="form-comment">
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Write your comment..."></textarea>
+                                        <p class="btn-comment"><button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button></p>
+                                    </div>
+                                </div>
+                            </div><!-- head -->
+  
+                            <div class="section">
+                                <h3>5 Comments</h3>
+                                <div class="section-inner">
+                                    <div class="comment-list">
+                                        <div class="comment-item clearfix">
+                                            <p class="avatar"><img src="../../../../../assets/images/avatar.png" alt=""></p>
+                                            <div class="comment-content">
+                                                <h4>Dean Lindsey <span>2019-08-27 | 12:16:43 PM</span></h4>
+                                                <div class="comment-text">
+                                                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                                </div>
+                                            </div><!-- comment-content -->
+                                        </div><!-- comment-item -->
+  
+                                        <div class="comment-item clearfix">
+                                            <p class="avatar"><img src="../../../../../assets/images/avatar.png" alt=""></p>
+                                            <div class="comment-content">
+                                                <h4>Dean Lindsey <span>2019-08-27 | 12:16:43 PM</span></h4>
+                                                <div class="comment-text">
+                                                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                                </div>
+                                            </div><!-- comment-content -->
+                                        </div><!-- comment-item -->
+  
+                                        <div class="comment-item clearfix">
+                                            <p class="avatar"><img src="../../../../../assets/images/avatar.png" alt=""></p>
+                                            <div class="comment-content">
+                                                <h4>Dean Lindsey <span>2019-08-27 | 12:16:43 PM</span></h4>
+                                                <div class="comment-text">
+                                                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                                </div>
+                                            </div><!-- comment-content -->
+                                        </div><!-- comment-item -->
+  
+                                        <div class="comment-item clearfix">
+                                            <p class="avatar"><img src="../../../../../assets/images/avatar.png" alt=""></p>
+                                            <div class="comment-content">
+                                                <h4>Dean Lindsey <span>2019-08-27 | 12:16:43 PM</span></h4>
+                                                <div class="comment-text">
+                                                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                                </div>
+                                            </div><!-- comment-content -->
+                                        </div><!-- comment-item -->
+  
+                                        <div class="comment-item clearfix">
+                                            <p class="avatar"><img src="../../../../../assets/images/avatar.png" alt=""></p>
+                                            <div class="comment-content">
+                                                <h4>Dean Lindsey <span>2019-08-27 | 12:16:43 PM</span></h4>
+                                                <div class="comment-text">
+                                                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                                </div>
+                                            </div><!-- comment-content -->
+                                        </div><!-- comment-item -->
+                                    </div><!-- comment-list -->
+                                </div><!-- section-inner -->
+                            </div><!-- section -->
+                        </div><!-- picture-mark -->
+                    </div><!-- modal-body -->
+  
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary-light" data-dismiss="modal">Close</button>
+                    </div><!-- modal-footer -->
+                </div>
+            </div><!-- modal-dialog -->
+        </div><!-- modal -->
+    </div><!-- section-inner -->
+  </div><!-- section -->
+</div>

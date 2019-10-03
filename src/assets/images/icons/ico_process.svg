@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Locations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Locations-Analytics" transform="translate(-1149.000000, -237.000000)">
+            <g id="Picture-Copy-3" transform="translate(1134.000000, 217.000000)">
+                <g id="Group-2" transform="translate(15.000000, 20.000000)">
+                    <circle id="Oval" fill="#00ACA8" opacity="0.1" cx="25" cy="25" r="25"></circle>
+                    <g id="Icon/All/process" transform="translate(14.000000, 14.000000)" stroke="#00ACA8" stroke-linecap="round" stroke-width="2">
+                        <path d="M20.6908165,11.1992246 C20.6908165,5.76133337 16.2416328,1.31214966 10.8037416,1.31214966 C6.94778235,1.31214966 3.58617689,3.48730614 2.00424491,6.75004086 M1.21327891,0.916666667 L2.00424491,6.75004086 L7.93648984,5.95907486 M17.9817579,18.0064756 C18.6323275,17.3114143 19.1810601,16.5184709 19.6032382,15.6484083 M11.0509184,21.0833333 C12.1602482,21.0566382 13.2250862,20.8499984 14.2157711,20.4891201 M3.75030233,18.1102899 C4.52050547,18.8963124 5.42121799,19.5557803 6.41486902,20.0521114 M0.916666667,11.1992246 C0.916666667,12.2294578 1.07683728,13.2240975 1.37246082,14.1594148" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -19,6 +19,7 @@ export class VideoComponent implements OnInit {
   }
 
   fullscreen() {
+    console.log('test');
     this.vg.fsAPI.toggleFullscreen();
   }
 }

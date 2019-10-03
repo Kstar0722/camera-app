@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Locations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Locations-camera" transform="translate(-870.000000, -232.000000)">
+            <g id="Picture" transform="translate(855.000000, 212.000000)">
+                <g id="Group-2" transform="translate(15.000000, 20.000000)">
+                    <circle id="Oval" fill="#ED8B00" opacity="0.1" cx="25" cy="25" r="25"></circle>
+                    <g id="Icon/All/pictures" transform="translate(14.000000, 14.000000)" stroke="#ED8B00" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2.91666667,0.916666667 L19.0833333,0.916666667 C20.1879028,0.916666667 21.0833333,1.81209717 21.0833333,2.91666667 L21.0833333,19.0833333 C21.0833333,20.1879028 20.1879028,21.0833333 19.0833333,21.0833333 L2.91666667,21.0833333 C1.81209717,21.0833333 0.916666667,20.1879028 0.916666667,19.0833333 L0.916666667,2.91666667 C0.916666667,1.81209717 1.81209717,0.916666667 2.91666667,0.916666667 Z M3.94166667,17.5541667 L6.96666667,12.0083333 L9.4875,14.5291667 L13.5208333,8.98333333 L18.0583333,17.5541667 L3.94166667,17.5541667 L3.94166667,17.5541667 Z M7.975,7.975 C9.08877425,7.975 9.99166667,7.07210758 9.99166667,5.95833333 C9.99166667,4.84455909 9.08877425,3.94166667 7.975,3.94166667 C6.86122575,3.94166667 5.95833333,4.84455909 5.95833333,5.95833333 C5.95833333,7.07210758 6.86122575,7.975 7.975,7.975 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
