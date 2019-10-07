@@ -1,0 +1,58 @@
+<div class="video-block" id="video">
+  <div class="video-inner">
+      <div class="head-bar">
+          <p class="lbl-label">Classification: Agglomerated</p>
+          <p class="lbl-status">Live</p>
+      </div><!-- head-bar -->
+      <p class="video-poster"><img [src]="streamData.data[imageIndex].image" alt=""></p>    
+  </div><!-- video-inner -->
+
+  <div class="control-bar">
+      <div class="control-timeline">
+          <div class="control-button">
+              <p class="play-pause"><a (click)="togglePlay()"><img [src]="isPlay ? '../../../assets/images/icons/ico_pause.svg' : '../../../assets/images/icons/ico_play.svg'" alt=""></a></p>
+          </div><!-- control-button -->
+          <div class="progress">
+              <div class="progess-bar">
+                  <div class="point-time" [style.left]="progress + '%'" >
+                    <p class="point"></p>
+                    <p class="time">{{ streamData.data[imageIndex].time }}</p>
+                  </div><!-- point-time -->
+              </div><!-- progess-bar -->
+
+          </div><!-- progress -->
+      </div><!-- control-timeline -->
+
+      <div class="control-action">
+          <ul>
+              <li>
+                  <a href="">
+                      <span class="icon">
+                          <img src="../../../assets/images/icons/ico_record.svg" alt="">
+                          <img class="icon-over" src="../../../assets/images/icons/ico_record_o.svg" alt="">
+                      </span>
+                      <span>Record</span>
+                  </a>
+              </li>
+              <li>
+                  <a [href]="streamData.data[imageIndex].image" [download]="streamData.data[imageIndex].image">
+                      <span class="icon">
+                          <img src="../../../assets/images/icons/ico_download.svg" alt="">
+                          <img class="icon-over" src="../../../assets/images/icons/ico_download_o.svg" alt="">
+                      </span>
+                      <span>Download picture</span>
+                  </a>
+              </li>
+              <li>
+                  <a (click)="onFullScreen()">
+                      <span class="icon">
+                          <img src="../../../assets/images/icons/ico_fullscreen.svg" alt="">
+                          <img class="icon-over" src="../../../assets/images/icons/ico_fullscreen_o.svg" alt="">
+                      </span>
+                      <span>Full Screen</span>
+                  </a>
+              </li>
+          </ul>    
+      </div><!-- control-action -->
+  </div><!-- control-bar -->
+</div><!-- video-block -->

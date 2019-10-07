@@ -6,8 +6,9 @@ import { VgOverlayPlayModule } from 'videogular2/compiled/overlay-play';
 import { VgBufferingModule } from 'videogular2/compiled/buffering';
 
 import { VideoComponent } from './video/video.component';
+import { StreamComponent } from './stream/stream.component';
 @NgModule({
-  declarations: [VideoComponent],
+  declarations: [VideoComponent, StreamComponent],
   imports: [
     CommonModule,
     VgCoreModule,
@@ -15,6 +16,9 @@ import { VideoComponent } from './video/video.component';
     VgOverlayPlayModule,
     VgBufferingModule
   ],
-  exports: [VideoComponent]
+  exports: [
+    StreamComponent,
+    VideoComponent,
+  ]
 })
 export class SharedModule { }
