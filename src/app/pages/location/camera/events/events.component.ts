@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsComponent implements OnInit {
 
+  private openAdvanced = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleAdvancedOption() {
+    this.openAdvanced = !this.openAdvanced;
   }
 
 }

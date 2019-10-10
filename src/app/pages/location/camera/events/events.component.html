@@ -1,4 +1,72 @@
 <app-camera-header></app-camera-header>
-<p>
-  events works!
-</p>
+<div class="camera-events">
+  <div class="block-search">
+    <form action="">
+      <div class="form-search">
+        <input type="text" class="form-control" id="" placeholder="Search">
+        <p class="icon-search"><img src="../../../../../assets/images/icons/ico_search.svg" alt=""></p>
+        <span (click)="toggleAdvancedOption()" class="advance-search">Advanced search</span>
+      </div><!-- form-search -->
+
+      <div [className]="openAdvanced ? 'block-advance open' : 'block-advance'">
+        <div class="row">
+          <div class="col-sm-4">
+            Start Date
+          </div>
+          <div class="col-sm-4">
+            End Date Date
+          </div>
+          <div class="col-sm-4">
+            Event
+          </div>
+        </div>
+      </div><!-- block-advance -->
+    </form>
+  </div><!-- block-search -->
+
+  <div class="section">
+    <ul class="list-inline text-right">
+        <li><a class="btn btn-primary-light">Download Report</a></li>
+        <li><a class="btn btn-primary">Subcribe</a></li>
+    </ul>
+    <div class="section-inner">
+      <div class="grid">
+        <div class="table-responsive">
+          <table class="table table-light">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Date and time</th>
+                <th>Remarks</th>
+                <th width="130">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Normal</td>
+                <td>2019-08-27 | 12:34:23 PM</td>
+                <td>Billboard Advertising</td>
+                <td>
+                  <ul class="actions">
+                    <li>
+                      <a data-toggle="tooltip" data-placement="top" title="Picture">
+                        <img src="../../../../../assets/images/icons/ico_picture.svg" alt="">
+                        <img class="img-over" src="../../../../../assets/images/icons/ico_picture_o.svg" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a data-toggle="tooltip" data-placement="top" title="Bookmark">
+                        <img src="../../../../../assets/images/icons/ico_add_bookmark.svg" alt="">
+                        <img class="img-over" src="../../../../../assets/images/icons/ico_add_bookmark_o.svg" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
