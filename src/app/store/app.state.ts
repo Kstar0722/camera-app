@@ -6,6 +6,10 @@ export interface ILocation {
   checked: boolean;
 }
 
-export interface IAppState {
+export interface ILocations {
   locations: Array<ILocation>;
+}
+
+export interface IAppState {
+  locations: ILocations;
 }

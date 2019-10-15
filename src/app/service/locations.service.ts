@@ -8,6 +8,6 @@ export class LocationsService {
   constructor(private http: HttpClient) { }
 
   getLocations() {
-    this.http.get('https://wa-sensai-api-ussc-dev.azurewebsites.net/api/Locations');
+    return this.http.get('https://wa-sensai-api-ussc-dev.azurewebsites.net/api/Locations');
   }
 }

@@ -1,16 +1,10 @@
 import { createSelector } from '@ngrx/store';
 
-import { IAppState, IGroup, IDomainData } from './app.state';
+import { IAppState, ILocations } from './app.state';
 
-const domainDataState = (state: IAppState) => state.domainData;
-const groups = (state: IAppState) => state.actualData.groups;
+const locationsState = (state: IAppState) => state.locations;
 
-export const selectDomain = createSelector(
-  domainDataState,
-  (state: IDomainData) => state
-);
-
-export const selectGroups = createSelector(
-  groups,
-  (state: IGroup[]) => state
+export const selectLocations = createSelector(
+  locationsState,
+  (state: ILocations) => state
 );
