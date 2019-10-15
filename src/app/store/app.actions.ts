@@ -10,7 +10,6 @@ export enum ELocationActions {
 
 export class GetLocations implements Action {
   readonly type = ELocationActions.GetLocations;
-  constructor() { }
 }
 
 export class GetLocationsSuccess implements Action {

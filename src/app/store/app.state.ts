@@ -5,3 +5,7 @@ export interface ILocation {
   image: string;
   checked: boolean;
 }
+
+export interface IAppState {
+  locations: Array<ILocation>;
+}
