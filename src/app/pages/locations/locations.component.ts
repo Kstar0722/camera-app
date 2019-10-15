@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./locations.component.scss']
 })
 export class LocationsComponent implements OnInit {
-
+  private openAdvanced = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggleAdvanced() {
+    this.openAdvanced = !this.openAdvanced;
+  }
 }

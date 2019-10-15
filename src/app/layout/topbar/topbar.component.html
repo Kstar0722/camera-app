@@ -1,4 +1,4 @@
-<header id="header">
+<header id="Header">
   <div class="section-mobile">
     <button type="button" [className]="openMobileSideBar ? 'navbar-toggle open' : 'navbar-toggle'" (click)="onToggleSidebar()">
       <span></span>
@@ -8,7 +8,7 @@
       <span></span>
       <span></span>
     </button>
-    <p id="Logo-sp"><a href=""><img src="../../../assets/images/common/logo.svg" alt=""></a></p>
+    <p id="Logo-sp"><a><img src="../../../assets/images/common/logo.svg" alt=""></a></p>
   </div>
 
   <form action="" method="POST" class="form-inline" role="form">
@@ -20,7 +20,7 @@
     </div>
   </form>
   <div class="user" (click)="toggleDropDown()" (blur)="toggleDropDown()">
-    <div class="dropdown">
+    <div [className]="openDropDown ? 'dropdown open' : 'dropdown'">
       <div class="dropdown-toggle" id="dropdown-user" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
         <span class="avatar"><img src="../../../assets/images/avatar.png" alt=""></span>
@@ -29,7 +29,7 @@
         </div>
         <span class="caret"></span>
       </div>
-      <ul [className]="openDropDown ? 'dropdown-menu open' : 'dropdown-menu'" aria-labelledby="dropdown-user">
+      <ul class="dropdown-menu" aria-labelledby="dropdown-user">
         <li>
           <a href="#">
             <span class="icon">
