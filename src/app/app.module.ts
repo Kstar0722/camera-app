@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 
+import { StoreModule } from '@ngrx/store';
+import { appReducer } from './store/app.reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { AppEffects } from './store/app.effects';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -13,7 +18,9 @@ import { LayoutModule } from './layout/layout.module';
     HttpClientModule,
     AppRoutingModule,
     CoreModule,
-    LayoutModule
+    LayoutModule,
+    StoreModule.forRoot(appReducer),
+    EffectsModule.forRoot([AppEffects]),
   ],
 
   bootstrap: [AppComponent]
