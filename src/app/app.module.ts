@@ -7,9 +7,11 @@ import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 
 import { StoreModule } from '@ngrx/store';
-import { appReducer } from './store/app.reducer';
 import { EffectsModule } from '@ngrx/effects';
-import { AppEffects } from './store/app.effects';
+import { appReducers } from './store/reducers/app.reducers';
+import { LocationsEffects } from './store/effects/locations.effects';
+
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,8 +21,8 @@ import { AppEffects } from './store/app.effects';
     AppRoutingModule,
     CoreModule,
     LayoutModule,
-    StoreModule.forRoot(appReducer),
-    EffectsModule.forRoot([AppEffects]),
+    StoreModule.forRoot(appReducers),
+    EffectsModule.forRoot([LocationsEffects]),
   ],
 
   bootstrap: [AppComponent]

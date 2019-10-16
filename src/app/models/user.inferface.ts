@@ -9,11 +9,3 @@ export interface ILocation {
   _ts: Date;
   _etag: string;
 }
-
-export interface ILocations {
-  locations: Array<ILocation>;
-}
-
-export interface IAppState {
-  locations: ILocations;
-}

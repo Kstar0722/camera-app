@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { State, Store } from '@ngrx/store';
-import { IAppState } from 'src/app/store/app.state';
-import { AppEffects } from 'src/app/store/app.effects';
-import { Actions } from '@ngrx/effects';
-import { GetLocations } from 'src/app/store/app.actions';
+import { Store, select } from '@ngrx/store';
+import { IAppState } from 'src/app/store/state/app.state';
+import { GetLocations } from 'src/app/store/actions/locations.actions';
+import { selectLocationList } from 'src/app/store/selectors/locations.selectors';
 
 @Component({
   selector: 'app-locations',
@@ -11,15 +10,11 @@ import { GetLocations } from 'src/app/store/app.actions';
   styleUrls: ['./locations.component.scss']
 })
 export class LocationsComponent implements OnInit {
-  console = console;
-
+  locationList$ = this.store.pipe(select(selectLocationList));
   private openAdvanced = false;
   constructor(
-    private state: State<IAppState>,
     private store: Store<IAppState>,
-    private effect: AppEffects,
-    private action: Actions
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.store.dispatch(new GetLocations());
