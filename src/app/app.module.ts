@@ -10,6 +10,7 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { appReducers } from './store/reducers/app.reducers';
 import { LocationsEffects } from './store/effects/locations.effects';
+import { CamerasEffects } from './store/effects/cameras.effects';
 
 
 
@@ -22,7 +23,7 @@ import { LocationsEffects } from './store/effects/locations.effects';
     CoreModule,
     LayoutModule,
     StoreModule.forRoot(appReducers),
-    EffectsModule.forRoot([LocationsEffects]),
+    EffectsModule.forRoot([LocationsEffects, CamerasEffects]),
   ],
 
   bootstrap: [AppComponent]

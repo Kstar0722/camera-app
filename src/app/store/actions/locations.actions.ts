@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { ILocation } from 'src/app/models/user.inferface';
+import { ILocation } from 'src/app/models/user.interface';
 
 export enum ELocationsActions {
   GetLocations = '[Locations] Get Locations',

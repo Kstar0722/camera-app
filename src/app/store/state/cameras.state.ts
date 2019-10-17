@@ -1,11 +1,11 @@
-import { ILocation } from 'src/app/models/user.interface';
+import { ICamera } from 'src/app/models/camera.interface';
 
-export interface ILocationsState {
-  locations: Array<ILocation>;
+export interface ICamerasState {
+  cameras: Array<ICamera>;
 }
 
-export const initialLocationsState: ILocationsState = {
-  locations: [
+export const initialCamerasState: ICamerasState = {
+  cameras: [
     {
       name: 'Baytown Plastic Plant',
       country: 'USA',

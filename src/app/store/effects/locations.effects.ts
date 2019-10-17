@@ -10,7 +10,7 @@ import { LocationsService } from 'src/app/service/locations.service';
 import { Store } from '@ngrx/store';
 import { IAppState } from '../state/app.state';
 import { switchMap } from 'rxjs/operators';
-import { ILocation } from 'src/app/models/user.inferface';
+import { ILocation } from 'src/app/models/user.interface';
 import { of } from 'rxjs';
 
 @Injectable()
