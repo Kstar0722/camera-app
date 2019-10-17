@@ -7,7 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./cameras.component.scss']
 })
 export class CamerasComponent implements OnInit {
-
+  private openAdvanced = false;
   constructor(private router: Router, private route: ActivatedRoute) { }
 
 
@@ -16,6 +16,10 @@ export class CamerasComponent implements OnInit {
 
   onCamera(cameraId) {
     this.router.navigate([`../../../camera/${cameraId}`], { relativeTo: this.route });
+  }
+
+  toggleAdvanced() {
+    this.openAdvanced = !this.openAdvanced;
   }
 
 }
