@@ -1,0 +1,7 @@
+.heart input[type="checkbox"] {
+    background: url(../../../assets/images/icons/ico_heart.svg) no-repeat 0 0;
+}
+
+.heart input[type="checkbox"]:checked {
+    background: url(../../../assets/images/icons/ico_heart_o.svg) no-repeat 0 0;
+}

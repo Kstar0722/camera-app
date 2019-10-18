@@ -1,4 +1,105 @@
-<div class="locations">
-  <a [routerLink]="['/', 'location', '1']">Locaton 1</a>
-  <a [routerLink]="['/', 'location', '2']">Locaton 2</a>
-</div>
+<div class="heading">
+    <h2><span>Locations</span></h2>
+    <p class="button-right"><a class="btn btn-primary">Add Location</a></p>
+</div><!-- heading -->
+
+<div class="main-content">
+    <div class="block-search">
+        <form action="">
+            <div class="form-search">
+                <input type="text" class="form-control" id="" placeholder="Search">
+                <p class="icon-search"><img src="../../../assets/images/icons/ico_search.svg" alt=""></p>
+                <span (click)="toggleAdvanced()"
+                    class="advance-search">{{ openAdvanced ? 'Hide advance search' : 'Advanced search'}}</span>
+            </div><!-- form-search -->
+
+            <div [className]="openAdvanced ? 'block-advance open' : 'block-advance'">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="">Country</label>
+                            <div class="form-select">
+                                <select name="" class="selectpicker" data-style="btn-select" title="Select">
+                                    <option>Canada</option>
+                                    <option>Mexico</option>
+                                </select>
+                            </div><!-- form-select -->
+                        </div><!-- form-group -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="">Business Line</label>
+                            <div class="form-select">
+                                <select name="" class="selectpicker" data-style="btn-select" title="Select">
+                                    <option>Chemicals</option>
+                                    <option>ABC</option>
+                                    <option>GFH</option>
+                                    <option>AWS</option>
+                                </select>
+                            </div><!-- form-select -->
+                        </div><!-- form-group -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="">Location</label>
+                            <div class="form-select">
+                                <select name="" class="selectpicker" data-style="btn-select" title="Select">
+                                    <option>Baton Rouge Plastic Plant</option>
+                                    <option>Normal</option>
+                                </select>
+                            </div><!-- form-select -->
+                        </div><!-- form-group -->
+                    </div>
+                </div>
+            </div><!-- block-advance -->
+        </form>
+    </div><!-- block-search -->
+
+    <div class="section">
+        <div class="section-inner">
+            <div class="row col-list">
+                <div *ngFor="let location of (locationList$ | async)" class="col-xs-6 col-sm-4 col-lg-3 col-item">
+                    <div class="col-inner">
+                        <div class="img">
+                            <p><img src="../../../assets/images/img02.jpg" alt=""></p>
+                        </div><!-- img -->
+                        <div class="info">
+                            <p class="ttl-info">
+                                <span>{{ location.name }}</span>
+                                <label class="heart" for=""><input type="checkbox"></label>
+                            </p>
+                            <div class="description">
+                                <p>{{ location.address }} <br>{{ location.country }}</p>
+                            </div>
+                        </div><!-- info -->
+
+                        <p class="button-bot"><a [routerLink]="['/', 'location', location.id]"
+                                class="btn btn-primary-light">View Cameras</a></p>
+                    </div><!-- col-inner -->
+                </div><!-- col-item -->
+            </div><!-- col-list -->
+
+            <!-- <div class="paging text-right">
+                <ul class="pagination">
+                    <li>
+                        <a aria-label="Previous">
+                            <span aria-hidden="true"><img src="../../../assets/images/icons/ico_paging_left.svg"
+                                    alt=""></span>
+                        </a>
+                    </li>
+                    <li><a>1</a></li>
+                    <li class="active"><a>2</a></li>
+                    <li><a>3</a></li>
+                    <li><span>...</span></li>
+                    <li><a>45</a></li>
+                    <li>
+                        <a aria-label="Next">
+                            <span aria-hidden="true"><img src="../../../assets/images/icons/ico_paging_right.svg"
+                                    alt=""></span>
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+        </div><!-- section-inner -->
+    </div><!-- section -->
+</div><!-- main-content -->
