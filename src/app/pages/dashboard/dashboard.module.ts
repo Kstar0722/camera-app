@@ -8,8 +8,8 @@ import { AuthenticationGuard } from 'microsoft-adal-angular6';
 const routes = [
   {
     path: '**',
-    canActivate: [AuthenticationGuard],
-    canActivateChild: [AuthenticationGuard],
+    // canActivate: [AuthenticationGuard],
+    // canActivateChild: [AuthenticationGuard],
     component: DashboardComponent
   }
 ];

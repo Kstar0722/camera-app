@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { SharedModule } from '../../../shared/shared.module';
 
-import { ComponentsModule } from './components/components.module';
 import { CameraComponent } from './camera.component';
 import { LiveStreamComponent } from './live-stream/live-stream.component';
 import { PicturesComponent } from './pictures/pictures.component';
@@ -17,46 +16,52 @@ import { AuthenticationGuard } from 'microsoft-adal-angular6';
 
 const routes = [
   {
-    path: 'live-stream',
-    canActivate: [AuthenticationGuard],
-    canActivateChild: [AuthenticationGuard],
-    component: LiveStreamComponent
-  },
-  {
-    path: 'pictures',
-    canActivate: [AuthenticationGuard],
-    canActivateChild: [AuthenticationGuard],
-    component: PicturesComponent
-  },
-  {
-    path: 'analytics',
-    canActivate: [AuthenticationGuard],
-    canActivateChild: [AuthenticationGuard],
-    component: AnalyticsComponent
-  },
-  {
-    path: 'events',
-    canActivate: [AuthenticationGuard],
-    canActivateChild: [AuthenticationGuard],
-    component: EventsComponent
-  },
-  {
-    path: 'computer-vision',
-    canActivate: [AuthenticationGuard],
-    canActivateChild: [AuthenticationGuard],
-    component: ComputerVisionComponent
-  },
-  {
-    path: 'api-settings',
-    canActivate: [AuthenticationGuard],
-    canActivateChild: [AuthenticationGuard],
-    component: ApiSettingsComponent
+    path: '',
+    redirectTo: 'live-stream',
+    pathMatch: ''
   },
   {
     path: '',
-    redirectTo: 'live-stream',
-    pathMatch: 'full'
-  },
+    component: CameraComponent,
+    children: [
+      {
+        path: 'live-stream',
+        // canActivate: [AuthenticationGuard],
+        // canActivateChild: [AuthenticationGuard],
+        component: LiveStreamComponent
+      },
+      {
+        path: 'pictures',
+        // canActivate: [AuthenticationGuard],
+        // canActivateChild: [AuthenticationGuard],
+        component: PicturesComponent
+      },
+      {
+        path: 'analytics',
+        // canActivate: [AuthenticationGuard],
+        // canActivateChild: [AuthenticationGuard],
+        component: AnalyticsComponent
+      },
+      {
+        path: 'events',
+        // canActivate: [AuthenticationGuard],
+        // canActivateChild: [AuthenticationGuard],
+        component: EventsComponent
+      },
+      {
+        path: 'computer-vision',
+        // canActivate: [AuthenticationGuard],
+        // canActivateChild: [AuthenticationGuard],
+        component: ComputerVisionComponent
+      },
+      {
+        path: 'api-settings',
+        // canActivate: [AuthenticationGuard],
+        // canActivateChild: [AuthenticationGuard],
+        component: ApiSettingsComponent
+      },
+    ],
+  }
 ];
 
 @NgModule({
@@ -72,7 +77,6 @@ const routes = [
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
-    ComponentsModule,
     FormsModule,
     FlatpickrModule.forRoot(),
     SharedModule
