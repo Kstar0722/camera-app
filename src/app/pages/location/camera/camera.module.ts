@@ -13,30 +13,43 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { EventsComponent } from './events/events.component';
 import { ComputerVisionComponent } from './computer-vision/computer-vision.component';
 import { ApiSettingsComponent } from './api-settings/api-settings.component';
+import { AuthenticationGuard } from 'microsoft-adal-angular6';
 
 const routes = [
   {
     path: 'live-stream',
+    canActivate: [AuthenticationGuard],
+    canActivateChild: [AuthenticationGuard],
     component: LiveStreamComponent
   },
   {
     path: 'pictures',
+    canActivate: [AuthenticationGuard],
+    canActivateChild: [AuthenticationGuard],
     component: PicturesComponent
   },
   {
     path: 'analytics',
+    canActivate: [AuthenticationGuard],
+    canActivateChild: [AuthenticationGuard],
     component: AnalyticsComponent
   },
   {
     path: 'events',
+    canActivate: [AuthenticationGuard],
+    canActivateChild: [AuthenticationGuard],
     component: EventsComponent
   },
   {
     path: 'computer-vision',
+    canActivate: [AuthenticationGuard],
+    canActivateChild: [AuthenticationGuard],
     component: ComputerVisionComponent
   },
   {
     path: 'api-settings',
+    canActivate: [AuthenticationGuard],
+    canActivateChild: [AuthenticationGuard],
     component: ApiSettingsComponent
   },
   {
@@ -63,6 +76,7 @@ const routes = [
     FormsModule,
     FlatpickrModule.forRoot(),
     SharedModule
-  ]
+  ],
+  providers: [AuthenticationGuard],
 })
 export class CameraModule { }

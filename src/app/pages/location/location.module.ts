@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { AuthenticationGuard } from 'microsoft-adal-angular6';
 
 const routes = [
   {
