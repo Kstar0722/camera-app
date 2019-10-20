@@ -4,6 +4,7 @@ import { Store, select } from '@ngrx/store';
 import { IAppState } from 'src/app/store/state/app.state';
 import { GetCameras } from 'src/app/store/actions/cameras.actions';
 import { selectCameraList } from 'src/app/store/selectors/cameras.selectors';
+import { selectSeletedLocation } from 'src/app/store/selectors/locations.selectors';
 
 @Component({
   selector: 'app-cameras',
@@ -13,6 +14,7 @@ import { selectCameraList } from 'src/app/store/selectors/cameras.selectors';
 export class CamerasComponent implements OnInit {
   private openAdvanced = false;
   cameraList$ = this.store.pipe(select(selectCameraList));
+  selectedLocation$ = this.store.pipe(select(selectSeletedLocation));
 
   constructor(private router: Router, private route: ActivatedRoute, private store: Store<IAppState>) { }
 

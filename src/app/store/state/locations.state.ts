@@ -2,6 +2,7 @@ import { ILocation } from 'src/app/models/user.interface';
 
 export interface ILocationsState {
   locations: Array<ILocation>;
+  selectedLocationId?: string;
 }
 
 export const initialLocationsState: ILocationsState = {
@@ -29,4 +30,5 @@ export const initialLocationsState: ILocationsState = {
       _etag: 'test'
     }
   ],
+  selectedLocationId: undefined,
 };

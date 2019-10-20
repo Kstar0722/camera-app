@@ -1,8 +1,9 @@
 export interface ICamera {
   name: string;
-  country: string;
-  ownerEmail: string;
-  address: string;
+  location_Id: string;
+  imageRate: number;
+  connectivity: string;
+  notes: string;
   id: string;
   _rid: string;
   _self: string;

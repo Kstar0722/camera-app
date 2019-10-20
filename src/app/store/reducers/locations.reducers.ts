@@ -17,7 +17,12 @@ export const locationsReducers = (
         locations: action.payload
       };
     }
-
+    case ELocationsActions.SetSelectedLocation: {
+      return {
+        ...state,
+        selectedLocationId: action.payload
+      };
+    }
     default:
       return state;
   }

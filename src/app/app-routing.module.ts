@@ -35,7 +35,7 @@ const routes: Routes = [
     loadChildren: './pages/information/information.module#InformationModule'
   },
   {
-    path: '',
+    path: '**',
     redirectTo: 'dashboard',
     pathMatch: 'full'
   },
