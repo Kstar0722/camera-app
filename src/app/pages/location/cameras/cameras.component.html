@@ -6,9 +6,9 @@
           <p class="img"><img src="../../../../assets/images/icons/ico_info_b.svg" alt=""></p>
           <div class="box-info">
             <ul>
-              <li>Owner <span>John Smith</span></li>
-              <li>Region <span>North America</span></li>
-              <li>Address <span>12875 scenic Hwy, Baton Rouge, LA</span></li>
+              <li>Owner <span>{{ (selectedLocation$ | async)?.ownerEmail }}</span></li>
+              <li>Region <span>{{ (selectedLocation$ | async)?.country }}</span></li>
+              <li>Address <span>{{ (selectedLocation$ | async)?.address }}</span></li>
             </ul>
           </div>
         </div>
@@ -140,7 +140,7 @@
           </div>
         </div>
 
-        <div class="paging text-right">
+        <!-- <div class="paging text-right">
           <ul class="pagination">
             <li>
               <a  aria-label="Previous">
@@ -158,7 +158,7 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

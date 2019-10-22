@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { AuthenticationGuard } from 'microsoft-adal-angular6';
 import { LocationComponent } from './location.component';
 
 const routes = [
@@ -21,7 +20,7 @@ const routes = [
     ]
   },
   {
-    path: 'camera/:id',
+    path: 'camera/:cameraId',
     loadChildren: './camera/camera.module#CameraModule'
   },
 ];
