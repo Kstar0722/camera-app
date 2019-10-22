@@ -1,183 +1,165 @@
-<div>
-  <div class="heading">
-    <h2>
-        <span>Baytown Plastic Plant</span>
-        <a><img src="../../../../assets/images/icons/ico_edit.svg" alt=""></a>
-    </h2>
-    <p class="button-right"><a class="btn btn-primary" >Add Camera</a></p>
-  </div>
-  
-  <div class="main-content">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a aria-controls="cameras" role="tab" data-toggle="tab">Cameras</a></li>
-        <li role="presentation"><a aria-controls="permission" role="tab" data-toggle="tab">Manage Permissions</a></li>
-    </ul>
-  
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="cameras">
-            <div class="row box-list">
-                <div class="col-sm-6 col-md-6 col-lg-6 box-item">
-                    <div class="box-inner clearfix">
-                        <p class="img"><img src="../../../../assets/images/icons/ico_info_b.svg" alt=""></p>
-                        <div class="box-info">
-                            <ul>
-                                <li>Owner <span>John Smith</span></li>
-                                <li>Region <span>North America</span></li>
-                                <li>Address <span>12875 scenic Hwy, Baton Rouge, LA</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="col-sm-6 col-md-6 col-lg-3 box-item">
-                    <div class="box-inner clearfix">
-                        <p class="img"><img src="../../../../assets/images/icons/ico_pictures.svg" alt=""></p>
-                        <div class="box-info">
-                            <h3>3.5M<span>Pictures</span></h3>         
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="col-sm-12 col-md-12 col-lg-3 box-item">
-                    <div class="box-inner clearfix">
-                        <p class="img"><img src="../../../../assets/images/icons/ico_camera.svg" alt=""></p>
-                        <div class="box-info">
-                            <h3>{{ (cameraList$ | async).length }}<span>Cameras</span></h3>               
-                        </div>
-                    </div>
-                </div>
-            </div>
-  
-            <div class="block-search">
-                <form action="">
-                    <div class="form-search">
-                        <input type="text" class="form-control" id="" placeholder="Search">
-                        <p class="icon-search"><img src="../../../../assets/images/icons/ico_search.svg" alt=""></p>
-                        <span (click)="toggleAdvanced()" class="advance-search">Advanced search</span>
-                    </div>
-  
-                    <div [className]="openAdvanced ? 'block-advance open' : 'block-advance'">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="">Country</label>
-                                    <div class="form-select">
-                                        <select name="" class="selectpicker" data-style="btn-select" title="Select">
-                                          <option>Canada</option>
-                                          <option>Mexico</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="">Business Line</label>
-                                    <div class="form-select">
-                                        <select name="" class="selectpicker" data-style="btn-select" title="Select">
-                                          <option>Chemicals</option>
-                                          <option>ABC</option>
-                                          <option>GFH</option>
-                                          <option>AWS</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="">Location</label>
-                                    <div class="form-select">
-                                        <select name="" class="selectpicker" data-style="btn-select" title="Select">
-                                          <option>Baton Rouge Plastic Plant</option>
-                                          <option>Normal</option>
-                                        </select>
-                                    </div><!-- form-select -->
-                                </div><!-- form-group -->
-                            </div>
-                        </div>
-                    </div><!-- block-advance -->
-                </form>
-            </div>
-  
-            <div class="section">
-                <div class="section-inner">
-                    <div class="row col-list">
-                        <div *ngFor="let camera of (cameraList$ | async)" class="col-xs-6 col-sm-4 col-lg-3 col-item">
-                            <div class="col-inner">
-                                <div class="img">
-                                    <p><a (click)="onCamera(camera.id)"><img src="../../../../assets/images/img01.jpg" alt=""></a></p>
-                                </div>
-                                <div class="info">
-                                    <p class="ttl-info">
-                                        <span>{{ camera.name }}</span>
-                                        <label class="heart" for=""><input type="checkbox"></label>
-                                    </p>
-                                    <div class="description">
-                                        <p>{{ camera.notes }}</p>
-                                    </div>
-                                </div>
-  
-                                <div class="button-list-bot">
-                                    <ul class="clearfix">
-                                        <li>
-                                            <a (click)="onCamera(camera.id)">
-                                                <span>
-                                                    <img src="../../../../assets/images/icons/ico_view.svg" alt="">
-                                                    <img class="img-over" src="../../../../assets/images/icons/ico_view_o.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a >
-                                                <span>
-                                                    <img src="../../../../assets/images/icons/ico_edit.svg" alt="">
-                                                    <img class="img-over" src="../../../../assets/images/icons/ico_edit_o.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a >
-                                                <span>
-                                                    <img src="../../../../assets/images/icons/ico_notification.svg" alt="">
-                                                    <img class="img-over" src="../../../../assets/images/icons/ico_notification_o.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a >
-                                                <span>
-                                                    <img src="../../../../assets/images/icons/ico_trash.svg" alt="">
-                                                    <img class="img-over" src="../../../../assets/images/icons/ico_trash_o.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-  
-                    <div class="paging text-right">
-                        <ul class="pagination">
-                            <li>
-                                <a  aria-label="Previous">
-                                    <span aria-hidden="true"><img src="../../../../assets/images/icons/ico_paging_left.svg" alt=""></span>
-                                </a>
-                            </li>
-                            <li><a >1</a></li>
-                            <li class="active"><a >2</a></li>
-                            <li><a >3</a></li>
-                            <li><span>...</span></li>
-                            <li><a >45</a></li>
-                            <li>
-                                <a  aria-label="Next">
-                                    <span aria-hidden="true"><img src="../../../../assets/images/icons/ico_paging_right.svg" alt=""></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="cameras">
+    <div class="row box-list">
+      <div class="col-sm-6 col-md-6 col-lg-6 box-item">
+        <div class="box-inner clearfix">
+          <p class="img"><img src="../../../../assets/images/icons/ico_info_b.svg" alt=""></p>
+          <div class="box-info">
+            <ul>
+              <li>Owner <span>John Smith</span></li>
+              <li>Region <span>North America</span></li>
+              <li>Address <span>12875 scenic Hwy, Baton Rouge, LA</span></li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3 box-item">
+        <div class="box-inner clearfix">
+          <p class="img"><img src="../../../../assets/images/icons/ico_pictures.svg" alt=""></p>
+          <div class="box-info">
+            <h3>3.5M<span>Pictures</span></h3>         
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 box-item">
+        <div class="box-inner clearfix">
+          <p class="img"><img src="../../../../assets/images/icons/ico_camera.svg" alt=""></p>
+          <div class="box-info">
+            <h3>{{ (cameraList$ | async).length }}<span>Cameras</span></h3>               
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-search">
+      <form action="">
+        <div class="form-search">
+          <input type="text" class="form-control" id="" placeholder="Search">
+          <p class="icon-search"><img src="../../../../assets/images/icons/ico_search.svg" alt=""></p>
+          <span (click)="toggleAdvanced()" class="advance-search">Advanced search</span>
+        </div>
+
+        <div [className]="openAdvanced ? 'block-advance open' : 'block-advance'">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label for="">Country</label>
+                <div class="form-select">
+                  <select name="" class="selectpicker" data-style="btn-select" title="Select">
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label for="">Business Line</label>
+                <div class="form-select">
+                  <select name="" class="selectpicker" data-style="btn-select" title="Select">
+                    <option>Chemicals</option>
+                    <option>ABC</option>
+                    <option>GFH</option>
+                    <option>AWS</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label for="">Location</label>
+                <div class="form-select">
+                  <select name="" class="selectpicker" data-style="btn-select" title="Select">
+                    <option>Baton Rouge Plastic Plant</option>
+                    <option>Normal</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="section">
+      <div class="section-inner">
+        <div class="row col-list">
+          <div *ngFor="let camera of (cameraList$ | async)" class="col-xs-6 col-sm-4 col-lg-3 col-item">
+            <div class="col-inner">
+              <div class="img">
+                <p><a (click)="onCamera(camera.id)"><img src="../../../../assets/images/img01.jpg" alt=""></a></p>
+              </div>
+              <div class="info">
+                <p class="ttl-info">
+                  <span>{{ camera.name }}</span>
+                  <label class="heart" for=""><input type="checkbox"></label>
+                </p>
+                <div class="description">
+                  <p>{{ camera.notes }}</p>
+                </div>
+              </div>
+              <div class="button-list-bot">
+                <ul class="clearfix">
+                  <li>
+                    <a (click)="onCamera(camera.id)">
+                      <span>
+                        <img src="../../../../assets/images/icons/ico_view.svg" alt="">
+                        <img class="img-over" src="../../../../assets/images/icons/ico_view_o.svg" alt="">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a >
+                      <span>
+                        <img src="../../../../assets/images/icons/ico_edit.svg" alt="">
+                        <img class="img-over" src="../../../../assets/images/icons/ico_edit_o.svg" alt="">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a >
+                      <span>
+                        <img src="../../../../assets/images/icons/ico_notification.svg" alt="">
+                        <img class="img-over" src="../../../../assets/images/icons/ico_notification_o.svg" alt="">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a >
+                      <span>
+                        <img src="../../../../assets/images/icons/ico_trash.svg" alt="">
+                        <img class="img-over" src="../../../../assets/images/icons/ico_trash_o.svg" alt="">
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="paging text-right">
+          <ul class="pagination">
+            <li>
+              <a  aria-label="Previous">
+                <span aria-hidden="true"><img src="../../../../assets/images/icons/ico_paging_left.svg" alt=""></span>
+              </a>
+            </li>
+            <li><a >1</a></li>
+            <li class="active"><a >2</a></li>
+            <li><a >3</a></li>
+            <li><span>...</span></li>
+            <li><a >45</a></li>
+            <li>
+              <a  aria-label="Next">
+                <span aria-hidden="true"><img src="../../../../assets/images/icons/ico_paging_right.svg" alt=""></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>

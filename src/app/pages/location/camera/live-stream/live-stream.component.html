@@ -1,17 +1,17 @@
-<app-camera-header></app-camera-header>
-<div class="live-stream-container">
-  <div class="date-picker-wrapper">
-    <div class="date-picker">
-      <input 
-        class="date-time-picker"
-        placeholder="Select Date..."
-        mwlFlatpickr
-        [(ngModel)]="selectedDate" 
-        [altInput]="true" 
-        [enableTime]="true"
-        dateFormat="Y-m-d H:i"
-        [convertModelValue]="true"
-      >
+<div role="tabpanel" class="tab-pane active" id="livestream">
+  <div class="select-time">
+    <div class="flatpickr">
+        <input 
+          class="date-time-picker"
+          placeholder="Select Date..."
+          mwlFlatpickr
+          [(ngModel)]="selectedDate" 
+          [altInput]="true" 
+          [enableTime]="true"
+          dateFormat="Y-m-d H:i"
+          [convertModelValue]="true"
+        >
+        <img src="../../../../../assets/images/icons/ico_calendar.svg" alt="">
     </div>
   </div>
   <!-- <app-video></app-video> -->
@@ -40,5 +40,5 @@
         </div>
       </div>
     </div>
-</div>
+  </div>
 </div>
